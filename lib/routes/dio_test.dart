@@ -61,6 +61,7 @@ class _DioTestRoute extends State<DioTestRoute> {
   void _postRequestAction({bool isFormData = false}) async {
     Object data = {"key": "value"};
     if (isFormData) {
+      // dio 发送 form 请求
       data = FormData.fromMap({
         "name": "wendux",
         "age": 25,
